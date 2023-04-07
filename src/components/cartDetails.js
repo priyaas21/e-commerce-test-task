@@ -18,6 +18,8 @@ function ProductDetails() {
       {(cart?.length > 0 && (
         <div className="cart-container">
           <h1>Cart Details</h1>
+          <h6 className="cart-item-qty">{`Cart item Count - ${cartList.length}`}</h6>
+          <h6 onClick={() => navigate('/')}>Add More...</h6>
           <div className="cart-list">
             {cart.map((product) => (
               <CartItem key={product?.id} product={product} />
