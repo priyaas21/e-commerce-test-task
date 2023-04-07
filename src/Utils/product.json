@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "title": "To Kill a Mockingbird",
     "author": "Harper Lee",
     "published": "July 11, 1960",
@@ -12,6 +13,7 @@
     "price": 1299
   },
   {
+    "id": 2,
     "title": "The Catcher in the Rye",
     "author": "J.D. Salinger",
     "published": "July 16, 1951",
@@ -24,6 +26,7 @@
     "price": 899
   },
   {
+    "id": 3,
     "title": "The Great Gatsby",
     "author": "F. Scott Fitzgerald",
     "published": "April 10, 1925",
@@ -36,6 +39,7 @@
     "price": 999
   },
   {
+    "id": 4,
     "title": "1984",
     "author": "George Orwell",
     "published": "June 8, 1949",
@@ -48,6 +52,7 @@
     "price": 799
   },
   {
+    "id": 5,
     "title": "The Hobbit",
     "author": "J.R.R. Tolkien",
     "published": "September 21, 1937",
@@ -60,6 +65,7 @@
     "price": 1499
   },
   {
+    "id": 6,
     "title": "Pride and Prejudice",
     "author": "Jane Austen",
     "published": "January 28, 1813",
@@ -72,6 +78,7 @@
     "price": 699
   },
   {
+    "id": 7,
     "title": "Harry Potter and the Philosopher's Stone",
     "author": "J.K. Rowling",
     "published": "June 26, 1997",
@@ -84,6 +91,7 @@
     "price": 1899
   },
   {
+    "id": 8,
     "title": "One Hundred Years of Solitude",
     "author": "Gabriel Garcia Marquez",
     "published": "January 15, 1813",
@@ -96,6 +104,7 @@
     "genre": "Dystopian Fiction"
   },
   {
+    "id": 9,
     "title": "Brave New World",
     "author": "Aldous Huxley",
     "publisher": "Chatto & Windus",
@@ -108,6 +117,7 @@
     "genre": "Dystopian Fiction"
   },
   {
+    "id": 10,
     "title": "The Lord of the Rings",
     "author": "J.R.R. Tolkien",
     "publisher": "Allen & Unwin",
