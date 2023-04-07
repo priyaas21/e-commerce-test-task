@@ -1,0 +1,122 @@
+[
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "published": "July 11, 1960",
+    "pages": 324,
+    "genre": "Classic",
+    "isbn": 9780061120084,
+    "publisher": "J. B. Lippincott & Co.",
+    "language": "English",
+    "format": "Hardcover",
+    "price": 1299
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "published": "July 16, 1951",
+    "pages": 277,
+    "genre": "Classic",
+    "isbn": 9780316769174,
+    "publisher": "Little, Brown and Company",
+    "language": "English",
+    "format": "Paperback",
+    "price": 899
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "published": "April 10, 1925",
+    "pages": 180,
+    "genre": "Classic",
+    "isbn": "9780743273565",
+    "publisher": "Scribner",
+    "language": "English",
+    "format": "Paperback",
+    "price": 999
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "published": "June 8, 1949",
+    "pages": 328,
+    "genre": "Dystopian Fiction",
+    "isbn": 9780451524935,
+    "publisher": "Secker & Warburg",
+    "language": "English",
+    "format": "Paperback",
+    "price": 799
+  },
+  {
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "published": "September 21, 1937",
+    "pages": 310,
+    "genre": "Fantasy",
+    "isbn": "9780547928227",
+    "publisher": "George Allen & Unwin'",
+    "language": "English",
+    "format": "Hardcover",
+    "price": 1499
+  },
+  {
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "published": "January 28, 1813",
+    "pages": 279,
+    "genre": "Romance",
+    "isbn": "9780486284736",
+    "publisher": "T. Egerton, Whitehall",
+    "language": "English",
+    "format": "Paperback",
+    "price": 699
+  },
+  {
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "published": "June 26, 1997",
+    "pages": 223,
+    "genre": "Fantasy",
+    "isbn": "9781408855652",
+    "publisher": "Bloomsbury",
+    "language": "English",
+    "format": "Hardcover",
+    "price": 1899
+  },
+  {
+    "title": "One Hundred Years of Solitude",
+    "author": "Gabriel Garcia Marquez",
+    "published": "January 15, 1813",
+    "publisher": "Harper & Row",
+    "pages": 400,
+    "isbn": "0060883286",
+    "language": "English",
+    "format": "Paperback",
+    "price": 699,
+    "genre": "Dystopian Fiction"
+  },
+  {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "publisher": "Chatto & Windus",
+    "published": "January 18, 1713",
+    "pages": 457,
+    "isbn": "0060850523",
+    "language": "English",
+    "format": "Paperback",
+    "price": 699,
+    "genre": "Dystopian Fiction"
+  },
+  {
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "publisher": "Allen & Unwin",
+    "published": "January 28, 1513",
+    "pages": 954,
+    "isbn": "0618640150",
+    "language": "English",
+    "format": "Paperback",
+    "price": 699,
+    "genre": "Dystopian Fiction"
+  }
+]
