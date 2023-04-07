@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
 import '../assets/css/cartItem.css';
+import { removeCartItem } from '../reducers/productReducer';
+import { useDispatch } from 'react-redux';
 
 function CartItem({ product }) {
   const [quantity, setQuantity] = useState(1);
+  const dispatch = useDispatch();
 
   const handleQtyIncrement = () => setQuantity(quantity + 1);
 
   const handleQtyDecrement = () => {
     if (quantity > 1) setQuantity(quantity - 1);
   };
+
+  const handleRemoveItem = (product) => dispatch(removeCartItem(product.id));
 
   return (
     <div className="cart-item">
@@ -41,6 +46,12 @@ function CartItem({ product }) {
         >
           +
         </button>
+        <div
+          onClick={() => handleRemoveItem(product)}
+          className="cart-item-quantity-remove"
+        >
+          Remove Item
+        </div>
       </div>
     </div>
   );

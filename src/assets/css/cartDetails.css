@@ -29,3 +29,32 @@
   font-size: 1.2rem;
   font-weight: bold;
 }
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.empty-cart span {
+  font-size: small;
+  font-weight: bold;
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.empty-cart p {
+  background-color: #3f51b5;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.empty-cart p:hover {
+  background-color: #303f9f;
+}

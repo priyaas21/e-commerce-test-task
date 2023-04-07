@@ -47,3 +47,11 @@
   font-weight: bold;
   margin: 0 0.5rem;
 }
+
+.cart-item-quantity-remove {
+  color: red;
+  font-size: x-small;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
