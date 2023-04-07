@@ -4,11 +4,14 @@ import { useSelector, useDispatch } from 'react-redux';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { getProductDetails, setCartList } from '../reducers/productReducer';
+import { useNavigate } from 'react-router-dom';
 
 function ProductDetails() {
   const { products, cartList } = useSelector((state) => state.product);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const [prodData, setProdData] = useState(products);
+
   useEffect(() => {
     dispatch(getProductDetails());
   }, []);
@@ -29,6 +32,10 @@ function ProductDetails() {
   return (
     <div className="page-container">
       <h1>Product Details</h1>
+      <h4>
+        {`Cart Items - ${cartList.length}`}
+        <span onClick={() => navigate('/cart')}>View Cart</span>
+      </h4>
       <div>
         <table className="product-detail-container">
           <thead>

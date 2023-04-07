@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<ProductDetails />} />
-          <Route path="/cartDetail" element={<CartDetails />} />
+          <Route path="/cart" element={<CartDetails />} />
         </Routes>
       </BrowserRouter>
     </Provider>
