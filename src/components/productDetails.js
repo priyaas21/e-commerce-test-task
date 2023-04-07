@@ -15,6 +15,7 @@ function ProductDetails() {
 
   useEffect(() => {
     try {
+      // will get the products available
       dispatch(getProductDetails());
     } catch (e) {
       console.log('Error in getting product list');
@@ -22,14 +23,17 @@ function ProductDetails() {
   }, []);
 
   useEffect(() => {
+    //will update products if found differece
     if (products !== prodData) setProdData(products);
   }, [products]);
 
   const addToCart = (product) => {
+    // will first check whether the product we are trying to add is already avaialble or not.
+    // if available then don't add in cart otherwise continue with adding.
     const checkExistCartItem = cartList.findIndex((c) => c?.id === product?.id);
-    if (checkExistCartItem > -1) {
+    if (checkExistCartItem > -1)
       toast.error(`${product?.title} is already added to cart!`);
-    } else {
+    else {
       try {
         dispatch(setCartList(product));
         toast.success(`${product?.title} added to cart!`);

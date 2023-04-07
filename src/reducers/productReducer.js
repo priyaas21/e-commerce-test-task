@@ -18,7 +18,6 @@ export const productSlice = createSlice({
       const currentCartData =
         JSON.parse(localStorage.getItem('cartList')) || [];
       const cartData = [...currentCartData, action.payload];
-      console.log('=====cart=======', cartData);
       localStorage.setItem('cartList', JSON.stringify(cartData));
     },
     removeCartItem: (state, action) => {

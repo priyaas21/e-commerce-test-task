@@ -9,14 +9,16 @@ function CartItem({ product }) {
   const [quantity, setQuantity] = useState(1);
   const dispatch = useDispatch();
 
-  const handleQtyIncrement = () => setQuantity(quantity + 1);
+  const handleQtyIncrement = () => setQuantity(quantity + 1); // will handle increment of product qty
 
   const handleQtyDecrement = () => {
+    // will handle decrememtn of product qty
     if (quantity > 1) setQuantity(quantity - 1);
   };
 
   const handleRemoveItem = (product) => {
     try {
+      // will remove the selected product from cart list
       dispatch(removeCartItem(product.id));
       toast.error(`${product?.title} is removed from your cart!`);
     } catch (e) {
