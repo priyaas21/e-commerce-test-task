@@ -9,22 +9,13 @@ function ProductDetails() {
   const { products, cartList } = useSelector((state) => state.product);
   const dispatch = useDispatch();
   const [prodData, setProdData] = useState(products);
-  // const [cart, setCart] = useState(cartList);
   useEffect(() => {
     dispatch(getProductDetails());
   }, []);
 
   useEffect(() => {
-    if (products !== prodData) {
-      setProdData(products);
-    }
+    if (products !== prodData) setProdData(products);
   }, [products]);
-
-  // useEffect(() => {
-  //   if (cartList !== cart) {
-  //     setCart(cartList);
-  //   }
-  // }, [cartList]);
 
   const addToCart = (product) => {
     const checkExistCartItem = cartList.findIndex((c) => c?.id === product?.id);
