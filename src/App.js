@@ -2,12 +2,17 @@ import ProductDetails from './components/productDetails';
 import CartDetails from './components/cartDetails';
 import { Provider } from 'react-redux';
 import store from './store';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <Provider store={store}>
-      {/* <ProductDetails /> */}
-      <CartDetails />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<ProductDetails />} />
+          <Route path="/cartDetail" element={<CartDetails />} />
+        </Routes>
+      </BrowserRouter>
     </Provider>
   );
 }
