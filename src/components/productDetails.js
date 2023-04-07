@@ -13,7 +13,11 @@ function ProductDetails() {
   const [prodData, setProdData] = useState(products);
 
   useEffect(() => {
-    dispatch(getProductDetails());
+    try {
+      dispatch(getProductDetails());
+    } catch (e) {
+      console.log('Error in getting product list');
+    }
   }, []);
 
   useEffect(() => {
@@ -25,8 +29,12 @@ function ProductDetails() {
     if (checkExistCartItem > -1) {
       toast.error(`${product?.title} is already added to cart!`);
     } else {
-      dispatch(setCartList(product));
-      toast.success(`${product?.title} added to cart!`);
+      try {
+        dispatch(setCartList(product));
+        toast.success(`${product?.title} added to cart!`);
+      } catch (e) {
+        console.log('Error in adding item to cart');
+      }
     }
   };
   return (

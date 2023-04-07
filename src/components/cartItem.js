@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import '../assets/css/cartItem.css';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { removeCartItem } from '../reducers/productReducer';
 import { useDispatch } from 'react-redux';
 
@@ -13,7 +15,14 @@ function CartItem({ product }) {
     if (quantity > 1) setQuantity(quantity - 1);
   };
 
-  const handleRemoveItem = (product) => dispatch(removeCartItem(product.id));
+  const handleRemoveItem = (product) => {
+    try {
+      dispatch(removeCartItem(product.id));
+      toast.error(`${product?.title} is removed from your cart!`);
+    } catch (e) {
+      console.log('Error in remove item', e);
+    }
+  };
 
   return (
     <div className="cart-item">
@@ -53,6 +62,7 @@ function CartItem({ product }) {
           Remove Item
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }
