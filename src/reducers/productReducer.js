@@ -14,11 +14,19 @@ export const productSlice = createSlice({
       state.products = productsData;
     },
     setCartList: (state, action) => {
-      state.cartList = [...state.cartList, action.payload];
+      // state.cartList = [...state.cartList, action.payload];
+      const currentCartData =
+        JSON.parse(localStorage.getItem('cartList')) || [];
+      const cartData = [...currentCartData, action.payload];
+      console.log('=====cart=======', cartData);
+      localStorage.setItem('cartList', JSON.stringify(cartData));
     },
     removeCartItem: (state, action) => {
       const prodId = action.payload;
-      state.cartList = state.cartList.filter((c) => c.id !== prodId);
+      // state.cartList = state.cartList.filter((c) => c.id !== prodId);
+      const cartList = JSON.parse(localStorage.getItem('cartList'));
+      const newList = cartList.filter((c) => c.id !== prodId);
+      localStorage.setItem('cartList', JSON.stringify(newList));
     },
   },
 });

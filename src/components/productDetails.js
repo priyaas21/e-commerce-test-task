@@ -7,7 +7,8 @@ import { getProductDetails, setCartList } from '../reducers/productReducer';
 import { useNavigate } from 'react-router-dom';
 
 function ProductDetails() {
-  const { products, cartList } = useSelector((state) => state.product);
+  const { products } = useSelector((state) => state.product);
+  const cartList = JSON.parse(localStorage.getItem('cartList')) || [];
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [prodData, setProdData] = useState(products);

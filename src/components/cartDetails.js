@@ -5,7 +5,7 @@ import CartItem from './cartItem';
 import { useNavigate } from 'react-router-dom';
 
 function ProductDetails() {
-  const { cartList } = useSelector((state) => state.product);
+  const cartList = JSON.parse(localStorage.getItem('cartList')) || [];
   const navigate = useNavigate();
   const [cart, setCart] = useState(cartList);
 
